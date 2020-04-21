@@ -1,0 +1,12 @@
+D:\Kuliah DKP\Modul3_kel35\Modul4_Kel35_2\Modul4_Kel35_2\bin\Debug\netcoreapp3.1\Modul4_Kel35_2.exe
+D:\Kuliah DKP\Modul3_kel35\Modul4_Kel35_2\Modul4_Kel35_2\bin\Debug\netcoreapp3.1\Modul4_Kel35_2.deps.json
+D:\Kuliah DKP\Modul3_kel35\Modul4_Kel35_2\Modul4_Kel35_2\bin\Debug\netcoreapp3.1\Modul4_Kel35_2.runtimeconfig.json
+D:\Kuliah DKP\Modul3_kel35\Modul4_Kel35_2\Modul4_Kel35_2\bin\Debug\netcoreapp3.1\Modul4_Kel35_2.runtimeconfig.dev.json
+D:\Kuliah DKP\Modul3_kel35\Modul4_Kel35_2\Modul4_Kel35_2\bin\Debug\netcoreapp3.1\Modul4_Kel35_2.dll
+D:\Kuliah DKP\Modul3_kel35\Modul4_Kel35_2\Modul4_Kel35_2\bin\Debug\netcoreapp3.1\Modul4_Kel35_2.pdb
+D:\Kuliah DKP\Modul3_kel35\Modul4_Kel35_2\Modul4_Kel35_2\obj\Debug\netcoreapp3.1\Modul4_Kel35_2.csproj.CoreCompileInputs.cache
+D:\Kuliah DKP\Modul3_kel35\Modul4_Kel35_2\Modul4_Kel35_2\obj\Debug\netcoreapp3.1\Modul4_Kel35_2.AssemblyInfoInputs.cache
+D:\Kuliah DKP\Modul3_kel35\Modul4_Kel35_2\Modul4_Kel35_2\obj\Debug\netcoreapp3.1\Modul4_Kel35_2.AssemblyInfo.cs
+D:\Kuliah DKP\Modul3_kel35\Modul4_Kel35_2\Modul4_Kel35_2\obj\Debug\netcoreapp3.1\Modul4_Kel35_2.dll
+D:\Kuliah DKP\Modul3_kel35\Modul4_Kel35_2\Modul4_Kel35_2\obj\Debug\netcoreapp3.1\Modul4_Kel35_2.pdb
+D:\Kuliah DKP\Modul3_kel35\Modul4_Kel35_2\Modul4_Kel35_2\obj\Debug\netcoreapp3.1\Modul4_Kel35_2.genruntimeconfig.cache
