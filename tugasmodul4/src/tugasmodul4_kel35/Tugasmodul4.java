@@ -5,6 +5,7 @@ public class Tugasmodul4 {
     public static void main(String[] args) {
         keterangan tulisan = new keterangan();
         perhitungan rumus = new perhitungan();
+        buat_member ini = new buat_member();
         Scanner scan = new Scanner(System.in);
         String pilihan, ulang;
 
@@ -13,6 +14,11 @@ public class Tugasmodul4 {
         
         pilihan = scan.nextLine();
         switch(pilihan){
+            case "0":
+                tulisan.bikin();
+                ini.namae();
+                break;
+                
             case "1":
                 tulisan.wahana();
                 rumus.input_wahana();
