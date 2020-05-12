@@ -1040,7 +1040,7 @@ public class Frame2 extends javax.swing.JFrame {
 
     private void pick_semua2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pick_semua2ActionPerformed
         pilihan2=3;
-        des_member.setText("<html>Tiket dimana anda bisa masuk kedua wahana sekaligus, nikmati"
+        des_member2.setText("<html>Tiket dimana anda bisa masuk kedua wahana sekaligus, nikmati"
                 + "<br/>semua yang terbaik dari wahana kami.</html>");
         harga_d2.setText("Dewasa: Rp 100000");
         harga_a2.setText("Anak-anak: Rp 90000");
