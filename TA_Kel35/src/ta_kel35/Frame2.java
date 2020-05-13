@@ -42,7 +42,6 @@ public class Frame2 extends javax.swing.JFrame {
         harga_anak1 = new javax.swing.JLabel();
         teks_total1 = new javax.swing.JLabel();
         harga_total1 = new javax.swing.JLabel();
-        hitung_member = new javax.swing.JButton();
         reset_member = new javax.swing.JButton();
         panel_harga1 = new javax.swing.JPanel();
         deskripsi_daftar1 = new javax.swing.JLabel();
@@ -68,7 +67,6 @@ public class Frame2 extends javax.swing.JFrame {
         harga_anak2 = new javax.swing.JLabel();
         teks_total2 = new javax.swing.JLabel();
         harga_total2 = new javax.swing.JLabel();
-        hitung_member2 = new javax.swing.JButton();
         reset_member2 = new javax.swing.JButton();
         panel_harga2 = new javax.swing.JPanel();
         deskripsi_daftar2 = new javax.swing.JLabel();
@@ -78,16 +76,16 @@ public class Frame2 extends javax.swing.JFrame {
         cetak_member2 = new javax.swing.JButton();
         akhir = new javax.swing.JPanel();
         judul_akhir = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
+        struk = new javax.swing.JPanel();
         harga_akhir = new javax.swing.JLabel();
         ket_akhir = new javax.swing.JLabel();
+        selesai = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         main_panel.setLayout(new java.awt.CardLayout());
 
-        depan.setBackground(new java.awt.Color(120, 180, 240));
+        depan.setBackground(new java.awt.Color(120, 165, 240));
         depan.setToolTipText("");
 
         judul_depan.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -168,7 +166,7 @@ public class Frame2 extends javax.swing.JFrame {
                 .addGroup(masukLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, masukLayout.createSequentialGroup()
                         .addComponent(confrim_masuk, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(69, 69, 69)
+                        .addGap(75, 75, 75)
                         .addComponent(cancel_masuk, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(156, 156, 156))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, masukLayout.createSequentialGroup()
@@ -281,24 +279,31 @@ public class Frame2 extends javax.swing.JFrame {
 
         deskripsi_tiket_member.setText("Silahkan masukkan jumlah tiket");
 
+        input1.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
+        input1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                input1StateChanged(evt);
+            }
+        });
+
+        input2.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
+        input2.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                input2StateChanged(evt);
+            }
+        });
+
         teks_dewasa_member1.setText("Dewasa     :");
 
         teks_anak_member1.setText("Anak-anak :");
 
-        harga_dewasa1.setText("Rp");
+        harga_dewasa1.setText("Rp 0");
 
-        harga_anak1.setText("Rp");
+        harga_anak1.setText("Rp 0");
 
         teks_total1.setText("Total Harga Tiket :");
 
-        harga_total1.setText("Rp");
-
-        hitung_member.setText("Hitung");
-        hitung_member.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hitung_memberActionPerformed(evt);
-            }
-        });
+        harga_total1.setText("Rp 0");
 
         reset_member.setText("Reset");
         reset_member.addActionListener(new java.awt.event.ActionListener() {
@@ -334,10 +339,8 @@ public class Frame2 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(harga_total1))
                     .addComponent(deskripsi_tiket_member))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                .addGroup(panel_hitung1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hitung_member, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(reset_member, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addComponent(reset_member)
                 .addGap(22, 22, 22))
         );
         panel_hitung1Layout.setVerticalGroup(
@@ -347,11 +350,10 @@ public class Frame2 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panel_hitung1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel_hitung1Layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
+                        .addGap(6, 6, 6)
                         .addGroup(panel_hitung1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(teks_dewasa_member1)
-                            .addComponent(harga_dewasa1)
-                            .addComponent(hitung_member)))
+                            .addComponent(harga_dewasa1)))
                     .addGroup(panel_hitung1Layout.createSequentialGroup()
                         .addComponent(input1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -532,24 +534,31 @@ public class Frame2 extends javax.swing.JFrame {
 
         deskripsi_tiket_member2.setText("Silahkan masukkan jumlah tiket");
 
+        input3.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
+        input3.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                input3StateChanged(evt);
+            }
+        });
+
+        input4.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
+        input4.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                input4StateChanged(evt);
+            }
+        });
+
         teks_dewasa_member2.setText("Dewasa     :");
 
         teks_anak_member2.setText("Anak-anak :");
 
-        harga_dewasa2.setText("Rp");
+        harga_dewasa2.setText("Rp 0");
 
-        harga_anak2.setText("Rp");
+        harga_anak2.setText("Rp 0");
 
         teks_total2.setText("Total Harga Tiket :");
 
-        harga_total2.setText("Rp");
-
-        hitung_member2.setText("Hitung");
-        hitung_member2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hitung_member2ActionPerformed(evt);
-            }
-        });
+        harga_total2.setText("Rp 0");
 
         reset_member2.setText("Reset");
         reset_member2.addActionListener(new java.awt.event.ActionListener() {
@@ -585,10 +594,8 @@ public class Frame2 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(harga_total2))
                     .addComponent(deskripsi_tiket_member2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                .addGroup(panel_hitung2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hitung_member2, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(reset_member2, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addComponent(reset_member2)
                 .addGap(22, 22, 22))
         );
         panel_hitung2Layout.setVerticalGroup(
@@ -598,11 +605,10 @@ public class Frame2 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panel_hitung2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel_hitung2Layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
+                        .addGap(6, 6, 6)
                         .addGroup(panel_hitung2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(teks_dewasa_member2)
-                            .addComponent(harga_dewasa2)
-                            .addComponent(hitung_member2)))
+                            .addComponent(harga_dewasa2)))
                     .addGroup(panel_hitung2Layout.createSequentialGroup()
                         .addComponent(input3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -709,76 +715,75 @@ public class Frame2 extends javax.swing.JFrame {
 
         main_panel.add(non_member, "kyoko");
 
-        akhir.setBackground(new java.awt.Color(240, 165, 240));
+        akhir.setBackground(new java.awt.Color(240, 195, 240));
         akhir.setToolTipText("");
 
         judul_akhir.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         judul_akhir.setText("Terima Kasih sudah berkunjung di wahana Kuvukiland!");
 
-        jButton1.setText("BALIK");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jPanel1.setBackground(new java.awt.Color(240, 165, 240));
-        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        struk.setBackground(new java.awt.Color(240, 195, 240));
+        struk.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         harga_akhir.setText("harga");
 
         ket_akhir.setText("Berikut detail tiket anda:");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout strukLayout = new javax.swing.GroupLayout(struk);
+        struk.setLayout(strukLayout);
+        strukLayout.setHorizontalGroup(
+            strukLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(strukLayout.createSequentialGroup()
                 .addGap(24, 24, 24)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(strukLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(harga_akhir)
                     .addComponent(ket_akhir))
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(7, 7, 7)
+        strukLayout.setVerticalGroup(
+            strukLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(strukLayout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(ket_akhir)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(harga_akhir)
-                .addContainerGap(115, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        selesai.setText("Selesai");
+        selesai.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                selesaiActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout akhirLayout = new javax.swing.GroupLayout(akhir);
         akhir.setLayout(akhirLayout);
         akhirLayout.setHorizontalGroup(
             akhirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(akhirLayout.createSequentialGroup()
-                .addGap(75, 75, 75)
-                .addComponent(judul_akhir)
-                .addContainerGap(103, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, akhirLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(144, 144, 144))
+                .addContainerGap(94, Short.MAX_VALUE)
+                .addComponent(judul_akhir)
+                .addGap(84, 84, 84))
+            .addGroup(akhirLayout.createSequentialGroup()
+                .addGroup(akhirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(akhirLayout.createSequentialGroup()
+                        .addGap(219, 219, 219)
+                        .addComponent(selesai))
+                    .addGroup(akhirLayout.createSequentialGroup()
+                        .addGap(154, 154, 154)
+                        .addComponent(struk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         akhirLayout.setVerticalGroup(
             akhirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(akhirLayout.createSequentialGroup()
-                .addGap(16, 16, 16)
+                .addContainerGap()
                 .addComponent(judul_akhir)
-                .addGroup(akhirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(akhirLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(64, 64, 64))
-                    .addGroup(akhirLayout.createSequentialGroup()
-                        .addGap(82, 82, 82)
-                        .addComponent(jButton1)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(struk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(selesai)
+                .addContainerGap(135, Short.MAX_VALUE))
         );
 
         main_panel.add(akhir, "madoka");
@@ -902,9 +907,9 @@ public class Frame2 extends javax.swing.JFrame {
     private String tempat1;    
        
     public void reset_member(){
-    harga_dewasa1.setText("Rp ");
-    harga_anak1.setText("Rp ");
-    harga_total1.setText("Rp ");
+    harga_dewasa1.setText("Rp 0");
+    harga_anak1.setText("Rp 0");
+    harga_total1.setText("Rp 0");
     input1.setValue(0);
     input2.setValue(0);
     }
@@ -953,11 +958,6 @@ public class Frame2 extends javax.swing.JFrame {
         output_member();
     }//GEN-LAST:event_pick_semua1ActionPerformed
 
-    //Button member
-    private void hitung_memberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hitung_memberActionPerformed
-        output_member();
-    }//GEN-LAST:event_hitung_memberActionPerformed
-
     private void reset_memberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reset_memberActionPerformed
         reset_member();
     }//GEN-LAST:event_reset_memberActionPerformed
@@ -966,6 +966,13 @@ public class Frame2 extends javax.swing.JFrame {
     if (pilihan1==0)
     {
         infoBox("Silahkan pilih wahana dan isi terlebih dahulu");
+    }
+    dew1=(Integer)input1.getValue();
+    an1=(Integer)input2.getValue();
+    if (dew1+an1==0)
+    {
+        infoBox("Silahkan masukkan jumlah tiket, atau tekan batal");
+        reset_member();
     }
     else
     {
@@ -996,9 +1003,9 @@ public class Frame2 extends javax.swing.JFrame {
     private String tempat2;
       
     public void reset_member2(){
-    harga_dewasa2.setText("Rp ");
-    harga_anak2.setText("Rp ");
-    harga_total2.setText("Rp ");
+    harga_dewasa2.setText("Rp 0");
+    harga_anak2.setText("Rp 0");
+    harga_total2.setText("Rp 0");
     input3.setValue(0);
     input4.setValue(0);
     }
@@ -1047,11 +1054,6 @@ public class Frame2 extends javax.swing.JFrame {
         output_member2();
     }//GEN-LAST:event_pick_semua2ActionPerformed
 
-    // button non member
-    private void hitung_member2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hitung_member2ActionPerformed
-        output_member2();
-    }//GEN-LAST:event_hitung_member2ActionPerformed
-
     private void reset_member2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reset_member2ActionPerformed
         reset_member2();
     }//GEN-LAST:event_reset_member2ActionPerformed
@@ -1065,6 +1067,13 @@ public class Frame2 extends javax.swing.JFrame {
     if (pilihan2==0)
     {
         infoBox("Silahkan pilih wahana dan isi terlebih dahulu");
+    }
+    dew2=(Integer)input3.getValue();
+    an2=(Integer)input4.getValue();
+    if (dew2+an2==0)
+    {
+        infoBox("Silahkan masukkan jumlah tiket, atau tekan batal");
+        reset_member2();
     }
     else
     {
@@ -1098,9 +1107,26 @@ public class Frame2 extends javax.swing.JFrame {
                 + "<br/><br/>Silahkan bayar di loket</html>");
     }
     // button kembali ke depan
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void selesaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selesaiActionPerformed
         sayaka();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_selesaiActionPerformed
+
+// Setting JSpinner
+    private void input3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_input3StateChanged
+        output_member2();
+    }//GEN-LAST:event_input3StateChanged
+
+    private void input4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_input4StateChanged
+        output_member2();
+    }//GEN-LAST:event_input4StateChanged
+
+    private void input1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_input1StateChanged
+        output_member();
+    }//GEN-LAST:event_input1StateChanged
+
+    private void input2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_input2StateChanged
+        output_member();
+    }//GEN-LAST:event_input2StateChanged
 
     
     public static void main(String args[]) {
@@ -1166,14 +1192,10 @@ public class Frame2 extends javax.swing.JFrame {
     private javax.swing.JLabel harga_dewasa2;
     private javax.swing.JLabel harga_total1;
     private javax.swing.JLabel harga_total2;
-    private javax.swing.JButton hitung_member;
-    private javax.swing.JButton hitung_member2;
     private javax.swing.JSpinner input1;
     private javax.swing.JSpinner input2;
     private javax.swing.JSpinner input3;
     private javax.swing.JSpinner input4;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel judul_akhir;
     private javax.swing.JLabel judul_depan;
     private javax.swing.JLabel judul_masuk;
@@ -1202,6 +1224,8 @@ public class Frame2 extends javax.swing.JFrame {
     private javax.swing.JRadioButton pick_water2;
     private javax.swing.JButton reset_member;
     private javax.swing.JButton reset_member2;
+    private javax.swing.JButton selesai;
+    private javax.swing.JPanel struk;
     private javax.swing.JLabel teks_anak_member1;
     private javax.swing.JLabel teks_anak_member2;
     private javax.swing.JLabel teks_dewasa_member1;
