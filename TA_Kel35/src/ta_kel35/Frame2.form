@@ -63,14 +63,14 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                       <Component id="pergi01" min="-2" pref="111" max="-2" attributes="0"/>
-                      <EmptySpace pref="169" max="32767" attributes="0"/>
+                      <EmptySpace pref="190" max="32767" attributes="0"/>
                       <Component id="pergi02" min="-2" pref="111" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="judul_depan" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -79,7 +79,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="judul_depan" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="101" max="32767" attributes="0"/>
+                      <EmptySpace pref="111" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="pergi01" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="pergi02" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -93,13 +93,16 @@
             <Component class="javax.swing.JLabel" name="judul_depan">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="18" style="0"/>
+                  <Font name="Arial" size="18" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Selamat Datang di Wahana Kuvukiland"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="pergi01">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Non-Member"/>
               </Properties>
               <Events>
@@ -108,6 +111,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="pergi02">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Member"/>
               </Properties>
               <Events>
@@ -132,7 +138,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace pref="137" max="32767" attributes="0"/>
+                      <EmptySpace pref="116" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="confrim_masuk" min="-2" pref="63" max="-2" attributes="0"/>
@@ -141,21 +147,20 @@
                               <EmptySpace min="-2" pref="156" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="masuk2" min="-2" max="-2" attributes="0"/>
-                                          <Component id="masuk1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="form_user" alignment="1" min="-2" pref="154" max="-2" attributes="0"/>
-                                          <Component id="form_pass" alignment="1" min="-2" pref="154" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Component id="judul_masuk" min="-2" pref="234" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="masuk2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="masuk1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="form_user" alignment="1" min="-2" pref="154" max="-2" attributes="0"/>
+                                  <Component id="form_pass" alignment="1" min="-2" pref="154" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="138" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="judul_masuk" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -164,9 +169,9 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                       <Component id="judul_masuk" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="masuk1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="form_user" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -181,7 +186,7 @@
                           <Component id="confrim_masuk" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="cancel_masuk" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="80" max="32767" attributes="0"/>
+                      <EmptySpace pref="84" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -190,18 +195,24 @@
             <Component class="javax.swing.JLabel" name="judul_masuk">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="14" style="0"/>
+                  <Font name="Arial" size="18" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value=" Silahkan masukkan data yang benar :"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="masuk1">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Username :"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="masuk2">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Password :"/>
               </Properties>
             </Component>
@@ -211,6 +222,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="confrim_masuk">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Login"/>
               </Properties>
               <Events>
@@ -219,6 +233,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="cancel_masuk">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Batal"/>
               </Properties>
               <Events>
@@ -248,10 +265,6 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="judul_member" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
                           <Component id="panel_wahana1" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="panel_hitung1" min="-2" max="-2" attributes="0"/>
@@ -263,9 +276,13 @@
                                       <Component id="cetak_member1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="batal_member1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="42" max="32767" attributes="0"/>
+                                      <EmptySpace min="0" pref="61" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="judul_member" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -300,7 +317,7 @@
             <Component class="javax.swing.JLabel" name="judul_member">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="14" style="0"/>
+                  <Font name="Arial" size="18" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Selamat Datang, member"/>
               </Properties>
@@ -360,6 +377,9 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="deskripsi_pilih_member">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Silahkan pilih wahana:"/>
                   </Properties>
                 </Component>
@@ -367,6 +387,9 @@
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                       <ComponentRef name="buttonGroup1"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Theme Park"/>
                   </Properties>
@@ -379,6 +402,9 @@
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                       <ComponentRef name="buttonGroup1"/>
                     </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Waterboom"/>
                   </Properties>
                   <Events>
@@ -390,6 +416,9 @@
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                       <ComponentRef name="buttonGroup1"/>
                     </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Semua Wahana"/>
                   </Properties>
                   <Events>
@@ -398,6 +427,9 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="des_member">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Pilih dahulu"/>
                   </Properties>
                 </Component>
@@ -491,6 +523,9 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="deskripsi_tiket_member">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Silahkan masukkan jumlah tiket"/>
                   </Properties>
                 </Component>
@@ -516,36 +551,57 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="teks_dewasa_member1">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Dewasa     :"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="teks_anak_member1">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Anak-anak :"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="harga_dewasa1">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Rp 0"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="harga_anak1">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Rp 0"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="teks_total1">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Total Harga Tiket :"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="harga_total1">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Rp 0"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JButton" name="reset_member">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Reset"/>
                   </Properties>
                   <Events>
@@ -596,16 +652,25 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="deskripsi_daftar1">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Daftar Harga:"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="harga_d1">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Dewasa : Rp"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="harga_a1">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Anak-anak : Rp"/>
                   </Properties>
                 </Component>
@@ -613,6 +678,9 @@
             </Container>
             <Component class="javax.swing.JButton" name="batal_member1">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Batal"/>
               </Properties>
               <Events>
@@ -621,6 +689,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="cetak_member1">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Cetak"/>
               </Properties>
               <Events>
@@ -662,7 +733,7 @@
                                       <Component id="cetak_member2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="batal_member2" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="42" max="32767" attributes="0"/>
+                                      <EmptySpace min="0" pref="61" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -699,7 +770,7 @@
             <Component class="javax.swing.JLabel" name="judul_member2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="14" style="0"/>
+                  <Font name="Arial" size="18" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Selamat Datang, tamu"/>
               </Properties>
@@ -759,6 +830,9 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="deskripsi_pilih_member2">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Silahkan pilih wahana:"/>
                   </Properties>
                 </Component>
@@ -766,6 +840,9 @@
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                       <ComponentRef name="buttonGroup1"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Theme Park"/>
                   </Properties>
@@ -778,6 +855,9 @@
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                       <ComponentRef name="buttonGroup1"/>
                     </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Waterboom"/>
                   </Properties>
                   <Events>
@@ -789,6 +869,9 @@
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                       <ComponentRef name="buttonGroup1"/>
                     </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Semua Wahana"/>
                   </Properties>
                   <Events>
@@ -797,6 +880,9 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="des_member2">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Pilih dahulu"/>
                   </Properties>
                 </Component>
@@ -890,6 +976,9 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="deskripsi_tiket_member2">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Silahkan masukkan jumlah tiket"/>
                   </Properties>
                 </Component>
@@ -915,36 +1004,57 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="teks_dewasa_member2">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Dewasa     :"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="teks_anak_member2">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Anak-anak :"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="harga_dewasa2">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Rp 0"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="harga_anak2">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Rp 0"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="teks_total2">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Total Harga Tiket :"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="harga_total2">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Rp 0"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JButton" name="reset_member2">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Reset"/>
                   </Properties>
                   <Events>
@@ -995,16 +1105,25 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="deskripsi_daftar2">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Daftar Harga:"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="harga_d2">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Dewasa : Rp"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="harga_a2">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Anak-anak : Rp"/>
                   </Properties>
                 </Component>
@@ -1012,6 +1131,9 @@
             </Container>
             <Component class="javax.swing.JButton" name="batal_member2">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Batal"/>
               </Properties>
               <Events>
@@ -1020,6 +1142,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="cetak_member2">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Cetak"/>
               </Properties>
               <Events>
@@ -1044,11 +1169,6 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="94" max="32767" attributes="0"/>
-                      <Component id="judul_akhir" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
@@ -1059,8 +1179,12 @@
                               <EmptySpace min="-2" pref="154" max="-2" attributes="0"/>
                               <Component id="struk" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                              <Component id="judul_akhir" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="49" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1073,7 +1197,7 @@
                       <Component id="struk" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="selesai" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="135" max="32767" attributes="0"/>
+                      <EmptySpace pref="152" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1082,7 +1206,7 @@
             <Component class="javax.swing.JLabel" name="judul_akhir">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="14" style="0"/>
+                  <Font name="Arial" size="18" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Terima Kasih sudah berkunjung di wahana Kuvukiland!"/>
               </Properties>
@@ -1127,11 +1251,17 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="harga_akhir">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="harga"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="ket_akhir">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="12" style="0"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Berikut detail tiket anda:"/>
                   </Properties>
                 </Component>
@@ -1139,6 +1269,9 @@
             </Container>
             <Component class="javax.swing.JButton" name="selesai">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="12" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Selesai"/>
               </Properties>
               <Events>

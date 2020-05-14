@@ -88,9 +88,10 @@ public class Frame2 extends javax.swing.JFrame {
         depan.setBackground(new java.awt.Color(120, 165, 240));
         depan.setToolTipText("");
 
-        judul_depan.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        judul_depan.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         judul_depan.setText("Selamat Datang di Wahana Kuvukiland");
 
+        pergi01.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         pergi01.setText("Non-Member");
         pergi01.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,6 +99,7 @@ public class Frame2 extends javax.swing.JFrame {
             }
         });
 
+        pergi02.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         pergi02.setText("Member");
         pergi02.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,20 +114,20 @@ public class Frame2 extends javax.swing.JFrame {
             .addGroup(depanLayout.createSequentialGroup()
                 .addGap(60, 60, 60)
                 .addComponent(pergi01, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 169, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 190, Short.MAX_VALUE)
                 .addComponent(pergi02, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(58, 58, 58))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, depanLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(judul_depan)
-                .addGap(98, 98, 98))
+                .addGap(106, 106, 106))
         );
         depanLayout.setVerticalGroup(
             depanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(depanLayout.createSequentialGroup()
                 .addGap(51, 51, 51)
                 .addComponent(judul_depan)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
                 .addGroup(depanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(pergi01)
                     .addComponent(pergi02))
@@ -136,13 +138,16 @@ public class Frame2 extends javax.swing.JFrame {
 
         masuk.setBackground(new java.awt.Color(180, 120, 240));
 
-        judul_masuk.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        judul_masuk.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         judul_masuk.setText(" Silahkan masukkan data yang benar :");
 
+        masuk1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         masuk1.setText("Username :");
 
+        masuk2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         masuk2.setText("Password :");
 
+        confrim_masuk.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         confrim_masuk.setText("Login");
         confrim_masuk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,6 +155,7 @@ public class Frame2 extends javax.swing.JFrame {
             }
         });
 
+        cancel_masuk.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         cancel_masuk.setText("Batal");
         cancel_masuk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -162,7 +168,7 @@ public class Frame2 extends javax.swing.JFrame {
         masukLayout.setHorizontalGroup(
             masukLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(masukLayout.createSequentialGroup()
-                .addContainerGap(137, Short.MAX_VALUE)
+                .addContainerGap(116, Short.MAX_VALUE)
                 .addGroup(masukLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, masukLayout.createSequentialGroup()
                         .addComponent(confrim_masuk, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -170,24 +176,24 @@ public class Frame2 extends javax.swing.JFrame {
                         .addComponent(cancel_masuk, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(156, 156, 156))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, masukLayout.createSequentialGroup()
-                        .addGroup(masukLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(masukLayout.createSequentialGroup()
-                                .addGroup(masukLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(masuk2)
-                                    .addComponent(masuk1))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(masukLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(form_user, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(form_pass, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(judul_masuk, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(138, 138, 138))))
+                        .addGroup(masukLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(masuk2)
+                            .addComponent(masuk1))
+                        .addGap(15, 15, 15)
+                        .addGroup(masukLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(form_user, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(form_pass, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(138, 138, 138))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, masukLayout.createSequentialGroup()
+                        .addComponent(judul_masuk)
+                        .addGap(109, 109, 109))))
         );
         masukLayout.setVerticalGroup(
             masukLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, masukLayout.createSequentialGroup()
-                .addGap(27, 27, 27)
+                .addGap(26, 26, 26)
                 .addComponent(judul_masuk)
-                .addGap(27, 27, 27)
+                .addGap(28, 28, 28)
                 .addGroup(masukLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(masuk1)
                     .addComponent(form_user, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -199,7 +205,7 @@ public class Frame2 extends javax.swing.JFrame {
                 .addGroup(masukLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(confrim_masuk)
                     .addComponent(cancel_masuk))
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addContainerGap(84, Short.MAX_VALUE))
         );
 
         main_panel.add(masuk, "homura");
@@ -207,15 +213,17 @@ public class Frame2 extends javax.swing.JFrame {
         member.setBackground(new java.awt.Color(240, 240, 120));
         member.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        judul_member.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        judul_member.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         judul_member.setText("Selamat Datang, member");
 
         panel_wahana1.setBackground(new java.awt.Color(240, 240, 120));
         panel_wahana1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        deskripsi_pilih_member.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         deskripsi_pilih_member.setText("Silahkan pilih wahana:");
 
         buttonGroup1.add(pick_taman1);
+        pick_taman1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         pick_taman1.setText("Theme Park");
         pick_taman1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -224,6 +232,7 @@ public class Frame2 extends javax.swing.JFrame {
         });
 
         buttonGroup1.add(pick_water1);
+        pick_water1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         pick_water1.setText("Waterboom");
         pick_water1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -232,6 +241,7 @@ public class Frame2 extends javax.swing.JFrame {
         });
 
         buttonGroup1.add(pick_semua1);
+        pick_semua1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         pick_semua1.setText("Semua Wahana");
         pick_semua1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -239,6 +249,7 @@ public class Frame2 extends javax.swing.JFrame {
             }
         });
 
+        des_member.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         des_member.setText("Pilih dahulu");
 
         javax.swing.GroupLayout panel_wahana1Layout = new javax.swing.GroupLayout(panel_wahana1);
@@ -277,6 +288,7 @@ public class Frame2 extends javax.swing.JFrame {
         panel_hitung1.setBackground(new java.awt.Color(240, 240, 120));
         panel_hitung1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        deskripsi_tiket_member.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         deskripsi_tiket_member.setText("Silahkan masukkan jumlah tiket");
 
         input1.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
@@ -293,18 +305,25 @@ public class Frame2 extends javax.swing.JFrame {
             }
         });
 
+        teks_dewasa_member1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         teks_dewasa_member1.setText("Dewasa     :");
 
+        teks_anak_member1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         teks_anak_member1.setText("Anak-anak :");
 
+        harga_dewasa1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         harga_dewasa1.setText("Rp 0");
 
+        harga_anak1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         harga_anak1.setText("Rp 0");
 
+        teks_total1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         teks_total1.setText("Total Harga Tiket :");
 
+        harga_total1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         harga_total1.setText("Rp 0");
 
+        reset_member.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         reset_member.setText("Reset");
         reset_member.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -372,10 +391,13 @@ public class Frame2 extends javax.swing.JFrame {
         panel_harga1.setBackground(new java.awt.Color(240, 240, 120));
         panel_harga1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        deskripsi_daftar1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         deskripsi_daftar1.setText("Daftar Harga:");
 
+        harga_d1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         harga_d1.setText("Dewasa : Rp");
 
+        harga_a1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         harga_a1.setText("Anak-anak : Rp");
 
         javax.swing.GroupLayout panel_harga1Layout = new javax.swing.GroupLayout(panel_harga1);
@@ -401,6 +423,7 @@ public class Frame2 extends javax.swing.JFrame {
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
+        batal_member1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         batal_member1.setText("Batal");
         batal_member1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -408,6 +431,7 @@ public class Frame2 extends javax.swing.JFrame {
             }
         });
 
+        cetak_member1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         cetak_member1.setText("Cetak");
         cetak_member1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -422,9 +446,6 @@ public class Frame2 extends javax.swing.JFrame {
             .addGroup(memberLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(memberLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(memberLayout.createSequentialGroup()
-                        .addComponent(judul_member)
-                        .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(panel_wahana1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(memberLayout.createSequentialGroup()
                         .addComponent(panel_hitung1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -436,7 +457,10 @@ public class Frame2 extends javax.swing.JFrame {
                                 .addComponent(cetak_member1)
                                 .addGap(18, 18, 18)
                                 .addComponent(batal_member1)
-                                .addGap(0, 42, Short.MAX_VALUE)))))
+                                .addGap(0, 61, Short.MAX_VALUE))))
+                    .addGroup(memberLayout.createSequentialGroup()
+                        .addComponent(judul_member)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         memberLayout.setVerticalGroup(
@@ -462,15 +486,17 @@ public class Frame2 extends javax.swing.JFrame {
 
         non_member.setBackground(new java.awt.Color(240, 60, 120));
 
-        judul_member2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        judul_member2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         judul_member2.setText("Selamat Datang, tamu");
 
         panel_wahana2.setBackground(new java.awt.Color(240, 60, 120));
         panel_wahana2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        deskripsi_pilih_member2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         deskripsi_pilih_member2.setText("Silahkan pilih wahana:");
 
         buttonGroup1.add(pick_taman2);
+        pick_taman2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         pick_taman2.setText("Theme Park");
         pick_taman2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -479,6 +505,7 @@ public class Frame2 extends javax.swing.JFrame {
         });
 
         buttonGroup1.add(pick_water2);
+        pick_water2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         pick_water2.setText("Waterboom");
         pick_water2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -487,6 +514,7 @@ public class Frame2 extends javax.swing.JFrame {
         });
 
         buttonGroup1.add(pick_semua2);
+        pick_semua2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         pick_semua2.setText("Semua Wahana");
         pick_semua2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -494,6 +522,7 @@ public class Frame2 extends javax.swing.JFrame {
             }
         });
 
+        des_member2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         des_member2.setText("Pilih dahulu");
 
         javax.swing.GroupLayout panel_wahana2Layout = new javax.swing.GroupLayout(panel_wahana2);
@@ -532,6 +561,7 @@ public class Frame2 extends javax.swing.JFrame {
         panel_hitung2.setBackground(new java.awt.Color(240, 60, 120));
         panel_hitung2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        deskripsi_tiket_member2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         deskripsi_tiket_member2.setText("Silahkan masukkan jumlah tiket");
 
         input3.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
@@ -548,18 +578,25 @@ public class Frame2 extends javax.swing.JFrame {
             }
         });
 
+        teks_dewasa_member2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         teks_dewasa_member2.setText("Dewasa     :");
 
+        teks_anak_member2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         teks_anak_member2.setText("Anak-anak :");
 
+        harga_dewasa2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         harga_dewasa2.setText("Rp 0");
 
+        harga_anak2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         harga_anak2.setText("Rp 0");
 
+        teks_total2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         teks_total2.setText("Total Harga Tiket :");
 
+        harga_total2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         harga_total2.setText("Rp 0");
 
+        reset_member2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         reset_member2.setText("Reset");
         reset_member2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -627,10 +664,13 @@ public class Frame2 extends javax.swing.JFrame {
         panel_harga2.setBackground(new java.awt.Color(240, 60, 120));
         panel_harga2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        deskripsi_daftar2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         deskripsi_daftar2.setText("Daftar Harga:");
 
+        harga_d2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         harga_d2.setText("Dewasa : Rp");
 
+        harga_a2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         harga_a2.setText("Anak-anak : Rp");
 
         javax.swing.GroupLayout panel_harga2Layout = new javax.swing.GroupLayout(panel_harga2);
@@ -656,6 +696,7 @@ public class Frame2 extends javax.swing.JFrame {
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
+        batal_member2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         batal_member2.setText("Batal");
         batal_member2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -663,6 +704,7 @@ public class Frame2 extends javax.swing.JFrame {
             }
         });
 
+        cetak_member2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         cetak_member2.setText("Cetak");
         cetak_member2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -691,7 +733,7 @@ public class Frame2 extends javax.swing.JFrame {
                                 .addComponent(cetak_member2)
                                 .addGap(18, 18, 18)
                                 .addComponent(batal_member2)
-                                .addGap(0, 42, Short.MAX_VALUE)))))
+                                .addGap(0, 61, Short.MAX_VALUE)))))
                 .addContainerGap())
         );
         non_memberLayout.setVerticalGroup(
@@ -718,14 +760,16 @@ public class Frame2 extends javax.swing.JFrame {
         akhir.setBackground(new java.awt.Color(240, 195, 240));
         akhir.setToolTipText("");
 
-        judul_akhir.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        judul_akhir.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         judul_akhir.setText("Terima Kasih sudah berkunjung di wahana Kuvukiland!");
 
         struk.setBackground(new java.awt.Color(240, 195, 240));
         struk.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        harga_akhir.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         harga_akhir.setText("harga");
 
+        ket_akhir.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         ket_akhir.setText("Berikut detail tiket anda:");
 
         javax.swing.GroupLayout strukLayout = new javax.swing.GroupLayout(struk);
@@ -749,6 +793,7 @@ public class Frame2 extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        selesai.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         selesai.setText("Selesai");
         selesai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -760,10 +805,6 @@ public class Frame2 extends javax.swing.JFrame {
         akhir.setLayout(akhirLayout);
         akhirLayout.setHorizontalGroup(
             akhirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, akhirLayout.createSequentialGroup()
-                .addContainerGap(94, Short.MAX_VALUE)
-                .addComponent(judul_akhir)
-                .addGap(84, 84, 84))
             .addGroup(akhirLayout.createSequentialGroup()
                 .addGroup(akhirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(akhirLayout.createSequentialGroup()
@@ -771,8 +812,11 @@ public class Frame2 extends javax.swing.JFrame {
                         .addComponent(selesai))
                     .addGroup(akhirLayout.createSequentialGroup()
                         .addGap(154, 154, 154)
-                        .addComponent(struk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(struk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(akhirLayout.createSequentialGroup()
+                        .addGap(41, 41, 41)
+                        .addComponent(judul_akhir)))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
         akhirLayout.setVerticalGroup(
             akhirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -783,7 +827,7 @@ public class Frame2 extends javax.swing.JFrame {
                 .addComponent(struk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(selesai)
-                .addContainerGap(135, Short.MAX_VALUE))
+                .addContainerGap(152, Short.MAX_VALUE))
         );
 
         main_panel.add(akhir, "madoka");
@@ -1100,10 +1144,10 @@ public class Frame2 extends javax.swing.JFrame {
     {
         harga_akhir.setText("<html>Jenis Tiket: "+tempat
                 + "<br/><br/>Jumlah Dewasa: "+dw
-                + "<br/>Biaya Tiket  : "+dewasa
+                + "<br/>Biaya Tiket  : Rp "+dewasa
                 + "<br/>Jumlah Anak  : "+an
-                + "<br/>Biaya Tiket  : "+anak
-                + "<br/><br/>Biaya total : "+total
+                + "<br/>Biaya Tiket  : Rp "+anak
+                + "<br/><br/>Biaya total : Rp "+total
                 + "<br/><br/>Silahkan bayar di loket</html>");
     }
     // button kembali ke depan
